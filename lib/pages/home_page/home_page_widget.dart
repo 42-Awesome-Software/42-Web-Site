@@ -68,10 +68,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
     'buttonOnPageLoadAnimation2': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
-        VisibilityEffect(duration: 900.ms),
+        VisibilityEffect(duration: 1210.ms),
         MoveEffect(
           curve: Curves.elasticOut,
-          delay: 900.ms,
+          delay: 1210.ms,
           duration: 1200.ms,
           begin: Offset(-0.0, 100.0),
           end: Offset(0.0, 0.0),
@@ -84,6 +84,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => HomePageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -199,8 +201,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 ),
                 FFButtonWidget(
                   onPressed: () async {
-                    await launchURL(
-                        'https://www.linkedin.com/company/42awesomesoftware/');
+                    await launchURL('https://github.com/42-Awesome-Software');
                   },
                   text: 'Github',
                   icon: FaIcon(
