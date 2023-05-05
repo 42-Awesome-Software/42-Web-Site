@@ -23,7 +23,7 @@ jobs:
           git config --global user.name DeployBot
           git checkout main
           git pull origin main
-          git checkout gh-pages
+          git checkout -b gh-pages
           git pull origin gh-pages
           git checkout main -- build/web/*
           git add .
