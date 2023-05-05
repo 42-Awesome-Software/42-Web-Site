@@ -1,0 +1,31 @@
+name: AC/DC
+on:
+  push:
+    branches:
+      - master
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+      - run: flutter clean
+      - run: flutter pub get
+      - run: flutter build web
+      # Web deploy now is contained in build/web directory
+      - run: |
+          git config --global user.email deploybot@423.com.ar
+          git config --global user.name DeployBot
+          git checkout main
+          git pull origin main
+          git checkout gh-pages
+          git pull origin gh-pages
+          git checkout main -- build/web/*
+          git add .
+          git commit -m "Actualizar la rama gh-pages con el contenido del directorio build/web de la rama main"
+          git push origin gh-pages
