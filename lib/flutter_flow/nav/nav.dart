@@ -38,7 +38,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, _) => HomePageWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
+          name: '42 Awesome Software',
           path: '/homePage',
           builder: (context, params) => HomePageWidget(),
         )
