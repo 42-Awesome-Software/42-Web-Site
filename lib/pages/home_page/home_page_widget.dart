@@ -100,7 +100,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'HomePage',
+        title: '42 Awesome Software',
         color: FlutterFlowTheme.of(context).primary,
         child: GestureDetector(
           onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
