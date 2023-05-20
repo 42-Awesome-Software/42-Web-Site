@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
+  <head>
+    <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
@@ -11,55 +11,54 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <base href="/">
+    <base href="/" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Awesome Software 42">
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="42 Awesome Software" />
 
-  
+    <!-- Favicon -->
+    <link rel="icon" href="42_200.png" sizes="any" />
 
-  
+    <!-- Open Graph & SEO tags -->
+    <meta property="og:title" content="42 Awesome Software" />
+    <meta
+      property="og:description"
+      content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito."
+    />
+    <meta property="og:image" content="share.png" />
+    <meta name="twitter:title" content="42 Awesome Software" />
+    <meta
+      name="twitter:description"
+      content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito."
+    />
+    <meta name="twitter:image" content="share.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="42_200.png" sizes="any"/>
-  
+    <title>42 Awesome Software</title>
+    <meta
+      name="description"
+      content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito."
+    />
 
-  <!-- Open Graph & SEO tags -->
-  <meta property="og:title" content="42 Awesome Software" />
-  <meta property="og:description" content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito." />
-  <meta property="og:image" content="share.png" /> 
-  <meta name="twitter:title" content="42 Awesome Software" />
-  <meta name="twitter:description" content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito." />
-  <meta name="twitter:image" content="share.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <title> 42 Awesome Software </title>
-  <meta name="description" content="Tecnología de vanguardia en desarrollo de software con Flutter | 42 Awesome Flutter Software. Impulsamos la innovación con soluciones personalizadas y eficientes en Flutter. Nuestro equipo de expertos en desarrollo crea aplicaciones móviles de alto rendimiento y interfaces de usuario fluidas para plataformas Android e iOS. Descubre cómo nuestra experiencia en Flutter impulsa tu negocio hacia el éxito." />
-    
-
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-    
-  </script>
-  
-  
-  
-  
-  <script src="main.dart.js" type="application/javascript"></script>
-</body>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("flutter-first-frame", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
 </html>
